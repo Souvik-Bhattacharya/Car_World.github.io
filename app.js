@@ -4,7 +4,8 @@ const path = require('path');
 const app = express();
 const mongoose = require('mongoose');
 const { stringify } = require('querystring');
-mongoose.connect('mongodb://localhost/carShowroom',{useNewUrlParser:true,useUnifiedTopology:true});
+const url = "mongodb+srv://Souvik-Bhattacharya:souvik03@cluster0.rbthm9k.mongodb.net/carShowroom?retryWrites=true&w=majority";
+mongoose.connect(url,{useNewUrlParser:true,useUnifiedTopology:true});
 const port = 80;
 
 var carSchema = new mongoose.Schema({
