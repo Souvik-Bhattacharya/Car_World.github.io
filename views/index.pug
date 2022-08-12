@@ -1,0 +1,13 @@
+extends base.pug
+block style
+    style
+        include ../static/styleindex.css
+block script
+    script
+        include ../static/scriptindex.js
+block content
+    section#home
+        div
+            h1(data-text="Welcome! To The Car world") Welcome! To The Car world
+            p Here you can find your dream car at a nominal price
+            span#time

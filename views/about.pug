@@ -1,0 +1,24 @@
+extends base.pug
+block style
+    style
+        include ../static/styleabout.css
+block content
+    section#about
+        div#sponsers
+            h1#a Our sponsers
+            div#sbox
+                a(href="http://apple.com", target="_blank") 
+                    img(src="../static/apple.png", alt="Apple")
+                a(href="http://google.com", target="_blank")
+                    img(src="../static/google.png", alt="Google")
+                a(href="http://telegram.org", target="_blank")
+                    img(src="../static/telegram.png", alt="Telegram")
+                a(href="http://facebook.com", target="_blank")
+                    img(src="../static/facebook.png", alt="Facebook")
+        div#location
+            h1#b Our Location
+            div#lbox
+                img(src="../static/location.png", alt="Location:")
+                div#info
+                    div We have our showroom at Kolkata, near park street, pin: 700 003.
+                    div We have a huge collection of cars of various brands with variety of range. Explore it.

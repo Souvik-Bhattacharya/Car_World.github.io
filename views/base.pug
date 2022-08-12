@@ -1,0 +1,47 @@
+doctype html
+html
+    head
+        title Car World
+        style
+            include ../static/stylemain.css
+        block style   
+        script 
+            include ../static/scriptmain.js
+        block script
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="icon", href="../static/logo.png")
+    body 
+        nav#navbar 
+            div#logo
+                img(src="../static/logo.png", alt="Car World")
+            div#title Car World
+            ul#nav 
+                li #[a(href="/") Home]
+                li #[a(href="/services") Our services]
+                li #[a(href="/about") About Us]
+                li #[a(href="/contact") Book Now]
+        block content 
+        footer#footer 
+            div#titleFooter Car World
+            div#social
+                a(href="http://facebook.com", target="_blank")
+                    img(src="../static/facebook.png", alt="Facebook")
+                a(href="http://instagram.com", target="_blank")  
+                    img(src="../static/insta.png", alt="Insta")
+                a(href="http://twitter.com", target="_blank")
+                    img(src="../static/twitter.png", alt="Twitter")
+            div#contact
+                div#mail
+                    h3 Mail Us:
+                    a(href="mailto:souvikbh12@gmail.com", target="_blank")
+                        img(src="../static/mail.png", alt="Email:souvikbh12@gmail.com") 
+                div#call
+                    h3 Call or Whatsapp:
+                    a(href="tel:+91-9433591372") 
+                        img(src="../static/whatsapp.png", alt="Phone:+91-9433591372")
+            div#items
+                a(href="/Terms" target="_blank")  Terms of Use
+                a(href="/Privacy" target="_blank")  Privacy Policy
+                a(href="/Return", target="_blank")  Return policy
+            div#copy
+                div copyrights &copy Car World.com | All rights reserved

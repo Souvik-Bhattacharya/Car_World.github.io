@@ -1,0 +1,207 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0.65;
+}
+
+#logo {
+    margin: 10px 20px;
+}
+
+#logo img {
+    height: 50px;
+    width: 62px;
+
+}
+
+#title {
+    font-weight: bolder;
+    font-family: 'Lobster', cursive, Arial;
+    color: darkorange;
+    font-size: 1.2rem;
+}
+
+#nav {
+    display: flex;
+
+}
+
+#nav li {
+    list-style: none;
+    margin: 10px;
+}
+
+#nav li a {
+    text-decoration: none;
+    color: white;
+    padding: 20px 35px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+#nav li a:hover {
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 30px;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(62, 4, 90);
+}
+
+#titleFooter {
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: 'Lobster', cursive, Arial;
+    color: darkorange;
+    padding: 8px;
+}
+
+#footer img {
+    height: 55px;
+    width: 55px;
+    border-radius: 8px;
+}
+
+#footer img:hover {
+    height: 68px;
+    width: 68px;
+}
+
+#social {
+    display: flex;
+    align-items: center;
+}
+
+#social a {
+    margin: 16px 20px;
+    padding: 0px;
+}
+
+#contact {
+    display: flex;
+}
+
+#contact h3 {
+    margin: 4px;
+    color: darkorange;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#mail {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+#call {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+#items {
+    display: flex;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#items a {
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+#items a:hover{
+    color: rgb(11, 11, 67);
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+#copy {
+    font-weight: bold;
+    color: darkorange;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+@media(max-width:990px) {
+    #navbar {
+        flex-direction: column;
+    }
+
+    #logo {
+        margin: 20px;
+    }
+
+    #title {
+        margin: 15px;
+    }
+
+    #nav {
+        flex-wrap: wrap;
+        margin-top: 15px;
+    }
+
+    #social {
+        flex-direction: column;
+    }
+
+    #social img {
+        height: 120px;
+        width: 120px;
+        border-radius: 10px;
+    }
+
+    #contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mail {
+        flex-direction: column;
+    }
+
+    #mail img {
+        height: 90px;
+        width: 90px;
+    }
+
+    #call {
+        flex-direction: column;
+    }
+
+    #call img {
+        height: 90px;
+        width: 90px;
+    }
+
+    #items {
+        flex-direction: column;
+    }
+}

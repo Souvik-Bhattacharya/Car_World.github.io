@@ -1,0 +1,22 @@
+extends base.pug
+block style
+    style
+        include ../static/stylecontact.css
+block script
+    script
+        include ../static/scriptcontact.js
+block content
+    section#form
+        h1 Book your slot now!
+        form(action="/contact", method="post")
+            input(type="text",name="name",placeholder="Enter your name")
+            input(type="number",name="age",placeholder="Enter your age")
+            input(type="text", name="elegibility",placeholder="Are you 18+ ? yes/no")
+            input(type="text",name="gender",placeholder="Enter your gender")
+            input(type="text",name="address",placeholder="Enter your address")
+            input(type="email", name="email",placeholder="Enter your email")
+            input(type="number", name="phone",placeholder="Enter your number")
+            input(type="date", name="date")
+            input(type="text",name="model",placeholder="Enter the desired car model")
+            input(type="text", name="color",placeholder="Enter the desired color")
+            button(id="btn" onclick="msgnew()") Submit

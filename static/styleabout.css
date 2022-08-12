@@ -1,0 +1,152 @@
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    padding: 10px;
+}
+
+#about::before {
+    content: "";
+    background: url('../static/bgabout.jpg') no-repeat center center/cover;
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 800px;
+    width: 100%;
+}
+
+#sponsers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+#sbox {
+    display: flex;
+}
+
+#sbox a {
+    margin: 10px 50px;
+    padding: 20px;
+}
+
+#sbox img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50px;
+    margin: 0%;
+    padding: 0%;
+}
+
+#sbox img:hover {
+    height: 125px;
+    width: 125px;
+}
+
+#location {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+#lbox {
+    display: flex;
+    align-items: center;
+}
+
+#lbox img {
+    height: 150px;
+    width: 150px;
+    margin: 10px 50px;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+#a {
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(3, 16, 96);
+    animation: type5 3s steps(12);
+    animation-timing-function: ease;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 12ch;
+    text-shadow: 0 0 30px #293f98;
+    color: #120a7e;
+}
+
+#b {
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(3, 16, 96);
+    animation: type6 3s steps(12);
+    animation-timing-function: ease;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 12ch;
+    text-shadow: 0 0 30px #293f98;
+    color: #120a7e;
+}
+
+@keyframes type5 {
+    0% {
+        width: 0ch;
+    }
+
+    100% {
+        width: 12ch;
+    }
+}
+
+@keyframes type6 {
+    0% {
+        width: 0ch;
+    }
+
+    100% {
+        width: 12ch;
+    }
+}
+
+#info div {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+@media(max-width:1460px) {
+    #sbox {
+        flex-wrap: wrap;
+        padding: 45px;
+        justify-content: center;
+    }
+
+    #lbox {
+        flex-direction: column;
+    }
+
+    #info div {
+        color: darkblue;
+        font-weight: bolder;
+        text-shadow: 0 0 30px blue;
+        font-size: 1.4rem;
+    }
+
+    #about::before {
+        height: 1480px;
+        opacity: 0.6;
+    }
+}
+
+@media(min-width:990px) and (max-width:1460px) {
+    #about::before {
+        height: 1065px;
+    }
+}

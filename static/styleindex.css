@@ -1,0 +1,137 @@
+#home::before {
+    content: "";
+    background: url('../static/bgindex.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 650px;
+    width: 100%;
+    z-index: -3;
+    opacity: 1;
+    top: 0px;
+    left: 0px;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 525px;
+}
+
+#home div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#home h1 {
+    font-size: 3rem;
+    /*position: absolute;
+    top: 20%;
+    left:50%;
+    transform: translate(-50%,-50%);*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /*color: #fff;*/
+    color: #21ff17;
+    text-align: center;
+    /*text-shadow: 0 0 30px #ff005b;*/
+    text-shadow: 0 0 30px #21ff17;
+    font-weight: lighter;
+    animation: type1 1.2s steps(21);
+    animation-timing-function: ease-in-out;
+    overflow: hidden;
+    white-space: nowrap;
+    /*border-right: 5px solid #21ff17;*/
+    width: 21ch;
+}
+
+@keyframes type1 {
+    0% {
+        width: 0ch;
+    }
+
+    100% {
+        width: 21ch;
+    }
+}
+
+/*
+#home h1:after{
+    content: attr(data-text);
+    position: absolute;
+    padding: 0 20px;
+    z-index: -1;
+    color: #ff005b;
+    filter: blur(15px);
+    top: 0;
+    left: 0;
+}
+#home h1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fe3a80;
+    z-index: -2;
+    opacity: 0.5;
+    filter: blur(40px);
+}
+*/
+#home p {
+    font-size: 1.5rem;
+    color: #17ffdb;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 0 0 30px #17ffdb;
+    font-style: italic;
+    animation: type2 3s steps(46);
+    animation-timing-function: ease-in;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 46ch;
+    padding: 3px;
+    margin: 1px;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 32px;
+}
+
+@keyframes type2 {
+    0% {
+        width: 0ch;
+    }
+
+    100% {
+        width: 46ch;
+    }
+}
+
+#time {
+    color: #21ff17;
+    text-shadow: 0 0 30px #21ff17;
+    font-size: 1.2rem;
+    font-family: 'consolas';
+}
+@media(max-width: 990px){
+    #home{
+        height: 860px;
+    }
+    #home::before{
+        height: 1270px;
+    }
+    #home div{
+        align-items: center;
+        margin-top: 20px;
+        padding: 50px;
+    }
+    #home h1{
+        font-size: 2rem;
+    }
+    #home p{
+        font-size: 1.7rem;
+    }
+    #home span{
+        font-size: 1.5rem;
+    }
+}

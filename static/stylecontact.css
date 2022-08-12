@@ -1,0 +1,89 @@
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form::before {
+    content: "";
+    background: url('../static/testcontact.jpg') no-repeat center center/cover;
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 950px;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #22072f;
+    text-align: center;
+    text-shadow: 0 0 30px #eaa17e;
+    animation: type7 2s steps(17);
+    animation-timing-function: ease-in;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 17ch;
+}
+
+@keyframes type7 {
+    0% {
+        width: 0ch;
+    }
+
+    100% {
+        width: 17ch;
+    }
+}
+
+input {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    outline: 0px;
+    flex-wrap: wrap;
+    flex-shrink: inherit;
+    width: 475px;
+}
+
+#btn {
+    width: 95px;
+    margin: auto;
+    padding: 16px;
+    border: 2px solid #0b060a;
+    border-radius: 15px;
+    outline: none;
+    background: #3e045a;
+    color: darkorange;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background-color: #ba87d3;
+    color: black;
+}
+@media(max-width:990px){
+    #form h1{
+        padding: 30px;
+    }
+    form{
+        padding: 30px;
+    }
+    #form{
+        height: ;
+    }
+    #form::before{
+        height: 1320px;
+    }
+}
