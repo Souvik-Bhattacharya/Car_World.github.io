@@ -78,6 +78,6 @@ app.post('/contact',(req,res)=>{
     });
 });
 
-app.listen(port,()=>{
+app.listen(process.env.PORT,()=>{
     console.log(`started on port ${port}`);
 });
