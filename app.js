@@ -4,7 +4,7 @@ const path = require('path');
 const app = express();
 const mongoose = require('mongoose');
 const { stringify } = require('querystring');
-const url = "mongodb+srv://Souvik-Bhattacharya:souvik03@cluster0.rbthm9k.mongodb.net/?retryWrites=true&w=majority";
+const url = "mongodb+srv://Souvik-Bhattacharya:souvik03@cluster0.rbthm9k.mongodb.net/carShowroom?retryWrites=true&w=majority";
 mongoose.connect(url,{useNewUrlParser:true,useUnifiedTopology:true});
 const port = process.env.PORT || 80;
 
