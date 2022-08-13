@@ -8,12 +8,6 @@ const url = process.env.MONGODB;
 mongoose.connect(url,{useNewUrlParser:true,useUnifiedTopology:true});
 const port = process.env.PORT || 80;
 
-var db = mongoose.Connection;
-db.on('error',console.error.bind(console,'connection error:'));
-db.once('open',function(){
-    console.log("MONGODB CONNECTED....")
-});
-
 var carSchema = new mongoose.Schema({
     name: 'string',
     age: 'string',
