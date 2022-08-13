@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 const { stringify } = require('querystring');
 const url = process.env.MONGODB;
 mongoose.connect(url,{useNewUrlParser:true,useUnifiedTopology:true});
+const port = process.env.PORT || 80;
 
 var carSchema = new mongoose.Schema({
     name: 'string',
@@ -77,6 +78,6 @@ app.post('/contact',(req,res)=>{
     });
 });
 
-app.listen(process.env.PORT,()=>{
-    console.log(`started on port ${process.env.PORT}`);
+app.listen(port,()=>{
+    console.log(`started on port ${port}`);
 });

@@ -4,14 +4,17 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "souvik",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1",
-    "heroku": "^7.62.0",
     "mongoose": "^6.5.2",
     "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
   }
 }
